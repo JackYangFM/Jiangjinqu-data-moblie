@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+<head>
+    <!--声明当前页面的编码集：charset=gbk,gb2312(中文编码)，utf-8国际编码-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--当前页面的三要素-->
+    <title>重庆江津区富硒数据展示平台-土壤硒含量富硒分布</title>
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <link href="css/main.css" rel="stylesheet">
+    <!--css,js-->
+    <style type="text/css">
+        body{background:#0a112b;font-family:"Adobe 黑体";color:#fff;font-size:0.14rem;}
+    </style>
+
+</head>
+<body>
+<!--container start-->
+<div class="container">
+    <!--标题-->
+    <div class="c_title">
+        <img src="images/t_title.png" />
+    </div>
+    <!--选择按钮-->
+    <div class="c_choose">
+    <img src="images/t_choose.png" />
+</div>
+    <div class="c_nav">
+        <ul>
+            <li>
+                <a href="index.html">富硒地图</a>
+            </li>
+            <li>
+                <a href="i_pro.html">富硒产品</a>
+            </li>
+            <li>
+                <a href="i_test.html">检测中心</a>
+            </li>
+        </ul>
+    </div>
+    <!--内容-->
+    <div class="c_content">
+        <ul>
+            <li>
+                <a class="cc_name">农场总数（个）</a>
+                <a class="cc_count">5335</a>
+            </li>
+            <li>
+                <a class="cc_name">农场总数（个）</a>
+                <a class="cc_count">5335</a>
+            </li>
+            <li class="cc_mar">
+                <a class="cc_name">农场总数（个）</a>
+                <a class="cc_count">5335</a>
+            </li>
+            <li>
+                <a class="cc_name">农场总数（个）</a>
+                <a class="cc_count">5335</a>
+            </li>
+            <li>
+                <a class="cc_name">农场总数（个）</a>
+                <a class="cc_count">5335</a>
+            </li>
+            <li class="cc_mar">
+                <a class="cc_name">农场总数（个）</a>
+                <a class="cc_count">5335</a>
+            </li>
+            <li>
+                <a class="cc_name">农场总数（个）</a>
+                <a class="cc_count">5335</a>
+            </li>
+            <li>
+                <a class="cc_name">农场总数（个）</a>
+                <a class="cc_count">5335</a>
+            </li>
+            <li class="cc_mar">
+                <a class="cc_name">农场总数（个）</a>
+                <a class="cc_count">5335</a>
+            </li>
+            <div class="clear"></div>
+        </ul>
+    </div>
+    <div class="c_line"></div>
+    <!--富硒地图-->
+    <div class="c_map">
+        <img src="images/map.png" />
+    </div>
+    <div class="c_line"></div>
+    <!--chart-->
+    <div class="c_chart1 chart_mt" id="container1"></div>
+    <div class="c_chart1" id="container2"></div>
+    <div class="c_chart1" id="container3"></div>
+    <div class="c_line"></div>
+    <!--乡镇列表-->
+    <div class="c_town">
+        <div class="ct_title">
+            <a class="ctt_name">乡镇列表</a>
+            <a class="ctt_area">占地面积</a>
+        </div>
+        <div class="ct_list">
+            <ul id="itemlist2">
+                <li>
+                    <a href="i_town.html" class="ctl_town">白沙镇</a>
+                    <a class="ctl_num">238平方公里</a>
+                </li>
+                <li>
+                    <a href="i_town.html" class="ctl_town">几江街道</a>
+                    <a class="ctl_num">238平方公里</a>
+                </li>
+                <li>
+                    <a href="i_town.html" class="ctl_town">德感街道</a>
+                    <a class="ctl_num">238平方公里</a>
+                </li>
+                <li>
+                    <a href="#" class="ctl_town">李市镇</a>
+                    <a class="ctl_num">238平方公里</a>
+                </li>
+                <li>
+                    <a href="#" class="ctl_town">先锋镇</a>
+                    <a class="ctl_num">238平方公里</a>
+                </li>
+                <li>
+                    <a href="#" class="ctl_town">珞璜镇</a>
+                    <a class="ctl_num">238平方公里</a>
+                </li>
+                <li>
+                    <a href="#" class="ctl_town">慈云镇</a>
+                    <a class="ctl_num">238平方公里</a>
+                </li>
+                <li>
+                    <a href="#" class="ctl_town">杜市镇</a>
+                    <a class="ctl_num">238平方公里</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--end container-->
+
+<!--js-start-->
+<script type="text/javascript" src="js/adaptive.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/highcharts.js"></script>
+<script type="text/javascript" src="js/highcharts-3d.js"></script>
+<script type="text/javascript" src="js/chart.js"></script>
+<script type="text/javascript" src="js/time.js" ></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=QdkKiyNTGDK4kGu2ACXFhwFI"></script>
+<script type="text/javascript" src="js/qyfb_map.js" ></script>
+<script type="text/javascript" src="js/texticonoverlay.js"></script>
+<script type="text/javascript" src="js/maplib.js"></script>
+<script type="text/javascript" src="js/profb_map.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        var speed = 200;//动画速度
+        $(".c_choose").click(function(event){//绑定事件处理
+            event.stopPropagation();
+            var offset = $(event.target).offset();//取消事件冒泡
+            $(".c_nav").show();//动画显示
+        });
+       $(document).click(function(event) { $(".c_nav").hide(speed) });//单击空白区域隐藏
+
+    });
+
+</script>
+<!--js-end-->
+</body>
+</html>

@@ -1,0 +1,122 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{margin:0;padding:0;list-style:none;text-decoration:none;outline:none;}
+img{display:block; border:none;}
+a{text-decoration:none;}
+input{margin:0; padding:0; border:none; outline:none;}
+p,td,dd,textarea{margin:0; padding:0; }
+ul,li,h1,h2,h3,h4,h5{margin:0; padding:0; list-style:none; line-height:normal;}
+button{border:none; padding:0; background:none; cursor:pointer;}
+table{border-collapse:collapse;border-color:#333;}
+.clear{clear:both;}
+#companymap,#productmap{overflow:hidden;margin:0;}
+.BMap_cpyCtrl{display:none;}.anchorBL{display:none;}
+
+/*data_head*/
+.container{background:#0a112b;overflow:hidden;}
+.container .c_nav{width:3rem;background:#122145;border-radius:0.1rem;position:fixed;top:0.85rem;left:0.3rem;display:none;z-index:100;}
+.container .c_nav ul li a{color:#0298a9;font-size:0.28rem;text-align:center;display:block;line-height:1rem;border-bottom:0.01rem solid #0a112b;}
+/**/
+.container .c_line{width:8.80rem;border:0.02rem #2196F3 dashed;margin:0 auto;}
+.container .c_title{width:8.81rem;height:0.65rem;margin:0 auto;}
+.container .c_title img{width:8.81rem;height:0.65rem;}
+.container .c_choose{width:0.5rem;height:0.45rem;position:fixed;top:0.3rem;left:0.3rem;}
+.container .c_choose img{width:0.5rem;height:0.45rem;}
+
+/*内容*/
+.container .c_content{width:8.8rem;margin:0.85rem auto 0.2rem;}
+.container .c_content ul li{width:2.60rem;height:1.60rem;float:left;margin:0 0.5rem 0.5rem 0;}
+.container .c_content ul .cc_mar{margin:0;}
+.container .c_content ul li a{width:2.60rem;text-align:center;display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.container .c_content ul li .cc_name{height:0.6rem;background:#0c1531;font-size:0.24rem;color:#56dae9;line-height:0.6rem;}
+.container .c_content ul li .cc_count{height:1rem;background:#122145;font-size:0.45rem;color:#fbcd15;line-height:1rem;}
+/*地图*/
+.container .c_map{width:8.80rem;margin:0.7rem auto;}
+.container .c_map img{width:8.76rem;height:12.44rem;}
+/*chart1*/
+.container .c_chart1{width:9rem;margin:0 auto;}
+.container .chart_mt{margin-top:0.6rem;}
+/*乡镇列表*/
+.container .c_town{width:8.80rem;margin:0.7rem auto;}
+.container .c_town .ct_title{overflow:hidden;margin-bottom:0.15rem;}
+.container .c_town .ct_title a{font-size:0.38rem;line-height:0.4rem;color:#ffc71e;display:block;float:left;}
+.container .c_town .ct_title .ctt_name{width:6rem;text-align:left;}
+.container .c_town .ct_title .ctt_area{width:2.8rem;text-align:right;}
+.container .c_town .ct_list{overflow:hidden;}
+.container .c_town .ct_list ul li a{font-size:0.28rem;color:#017e8c;line-height:0.7rem;display:block;float:left;}
+.container .c_town .ct_list ul li .ctl_town{width:6rem;text-align:left;}
+.container .c_town .ct_list ul li .ctl_town:active{color:#fff;}
+.container .c_town .ct_list ul li .ctl_num{width:2.8rem;text-align:right;}
+
+/*富硒产品*/
+.container .c_map1{width:8.8rem;height:6rem;margin:0 auto 0.7rem;}
+.container .c_map1 a{width:8.8rem;height:6rem;position:absolute;margin-top:0.85rem;}
+.container .chart_mt1{height:7rem;}
+.container .c2{margin-top:0.7rem;}
+
+/*检测中心*/
+.container .c_intro{width:8.80rem;margin:0.85rem auto 0.7rem;overflow:hidden;}
+.container .c_intro p{text-indent:2em;font-size:0.32rem;color:#0298a9;line-height:0.55rem;}
+.container .c_ttitle{text-align:center;padding-bottom:0.3rem;font-size:0.32rem;color:#0298a9;font-weight:600;}
+.container .c_tpic{width:8.8rem;height:7.82rem;margin:0.7rem auto;overflow:hidden;position:relative;}
+.container .c_tpic h3{text-align:center;padding-bottom:0.3rem;font-size:0.32rem;color:#0298a9;}
+.container .c_tpic ul{position:absolute;background:rgba(0, 26, 27, 0.5);bottom:0.1rem;padding:0.2rem;border-radius:0.3rem;left:3.2rem;}
+.container .c_tpic ul li{width:0.2rem;height:0.2rem;border:1px solid #f9c91d;border-radius:50%;float:left;margin:0 0.15rem;}
+.container .c_tpic ul .pb_focus{background:#f9c91d;}
+.container .tr_down{width:8.8rem;margin:0.7rem auto;}
+.container .tr_down .trd_title{width:8.8rem;height:0.8rem;}
+.container .tr_down .trd_title a{width:2.2rem;height:0.8rem;display:block;float:left;text-align:center;line-height:0.8rem;font-size:0.38rem;font-weight:600;color:#02acbf;}
+.container .tr_down .trd_list{width:8.8rem;height:10rem;overflow:hidden;}
+.container .tr_down .trd_list ul li a{width:2.2rem;display:block;float:left;text-align:center;font-size:0.28rem;color:#02acbf;padding-bottom:0.2rem;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;}
+
+/*乡镇*/
+.container .mt{margin-top:0.5rem;}
+.container .c_company{width:8.80rem;margin:0.7rem auto;}
+.container .c_company .ct_title{overflow:hidden;margin-bottom:0.15rem;}
+.container .c_company .ct_title a{font-size:0.38rem;line-height:0.4rem;color:#ffc71e;display:block;float:left;}
+.container .c_company .ct_title .ctt_name{width:7.5rem;text-align:left;}
+.container .c_company .ct_title .ctt_area{width:1.3rem;text-align:right;}
+.container .c_company .ct_list{overflow:hidden;}
+.container .c_company .ct_list ul li a{font-size:0.28rem;color:#017e8c;line-height:0.7rem;display:block;float:left;}
+.container .c_company .ct_list ul li .ctl_town{width:7.5rem;text-align:left;}
+.container .c_company .ct_list ul li .ctl_town:active{color:#fff;}
+.container .c_company .ct_list ul li .ctl_num{width:1.3rem;text-align:right;}
+
+.container .c_company .ct_list ul li .star5{color:#f2262f;}
+.container .c_company .ct_list ul li .star4{color:#e2a53a;}
+.container .c_company .ct_list ul li .star3{color:#d4d568;}
+.container .c_company .ct_list ul li .star2{color:#9bc8e7;}
+.container .c_company .ct_list ul li .star1{color:#cdf496;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
